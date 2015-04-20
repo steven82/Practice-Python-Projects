@@ -1,5 +1,6 @@
 # This script takes a command-line arguement and counts how many letters 
 # are in the given string.
+#
 
 import sys
 
