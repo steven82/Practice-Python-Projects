@@ -7,7 +7,8 @@ def main(userName, count):
 	for i in userName:
 		count += 1
 		print "%s is letter No.%d" % (i, count)
+	print "There are %d letters in total here!\n" % count
 
 if __name__ == '__main__':
-	count  = 0
+	count = 0
 	main(sys.argv[1], count)
