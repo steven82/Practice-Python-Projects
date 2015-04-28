@@ -34,6 +34,7 @@ def mainGame(pointsLeft, wordToGuess, wordToChar, guessPanel):
 		# Checks the selected word against the words that the user has guessed
 		# each turn. If the user has guessed all letters then prompt for input.
 		if guessPanel == wordToChar:
+			print "Congratulations!  The word was: %s" % wordToGuess
 			print "You have won! Play again(y/n) "
 			if raw_input() == 'y':
 				initGame()
@@ -59,13 +60,14 @@ def mainGame(pointsLeft, wordToGuess, wordToChar, guessPanel):
 			print "Incorrect!!"
 			pointsLeft -= 1
 	
-	# This occurs when 'pointsLeft' is equal to zero.  User prompted for action.
-	print "You have run out of points.  Play again(y/n) "
-	if raw_input() == 'y':
+	# This occurs when 'pointsLeft' is equal to zero.  
+	# Display the word, prompt player for action.
+	print "You have run out of points.  The word was: %s" % wordToGuess
+	if raw_input("Play again? (y/n) ") == 'y':
 		initGame()
 	else:
 		exit(0)		
 
-
+# Entry point for the script!
 initGame()
 
