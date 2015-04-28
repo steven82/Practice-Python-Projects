@@ -3,7 +3,7 @@ import random
 def initGame():
 	pointsLeft = 6
 	words = ['banana', 'stairs', 'books', 'television', 'mouse'
-			, 'keyboard', 'feather', 'jacket', 'shoes', 'music']
+			,'keyboard', 'feather', 'jacket', 'shoes', 'music']
 
 	# Picks a random word from our list and stores it in 'wordToGuess'
 	wordToGuess = random.choice(words)
